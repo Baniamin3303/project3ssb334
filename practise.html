@@ -1,0 +1,167 @@
+<!docktype html>
+ <html>
+<head>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width,initial-scale=1.0">
+	<title>document</title>
+	<link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+	<nav>
+		<div class="home">
+		 <a href="index.html">Home</a><br>
+	      <a href="#">Practise</a>
+          <a href="layout.html">layout</a>	
+	  </div>
+</nav>
+	 <h1>The a element</h1>
+
+<a href="https://www.facebook.com">facebook</a>
+	<h1>The abbr element</h1>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<h1>The bdo element</h1>
+
+<p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>  
+<h1>The button Element</h1>
+
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+ <h1>The cite element</h1>
+
+<img src="image/html.jpg"alt="The Scream">
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+<h1>The code element</h1>
+
+<p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+<h1>The dfn element</h1>
+
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+<h1>The input element</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+<h1>The kbd element</h1>
+
+<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+<h1>The label element</h1>
+
+<p>Click on one of the text labels to toggle the related radio button:</p>
+
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="image/html.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+ <h1>The object element</h1>
+
+<object data="image/html.jpg " width="300" height="200"></object>
+ <object data="video/movies.mp4"width="500"height="300"></object>
+<h1>The output element</h1>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+<h1>The q element</h1>
+
+<p>WWF's goal is to: 
+<q>Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+<h1>The samp element</h1>
+
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<h1>The script element</h1>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+<h1>The select element</h1>
+
+<p>The select element is used to create a drop-down list.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+<h1>The small element</h1>
+
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
+<h1>The sub and sup elements</h1>
+
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+<h1>The sub and sup elements</h1>
+
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+<h1>The textarea element</h1>
+
+<form action="/action_page.php">
+<label for="w3review">Review of W3Schools:</label>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+<h1>The time element</h1>
+
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+<p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
+<h1>The var element</h1>
+
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p> 
+</body>
+</html>
